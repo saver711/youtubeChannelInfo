@@ -62,7 +62,13 @@ function search() {
   )
 }
 
-searchBtn.addEventListener('click', search)
+searchBtn.addEventListener('click', ()=>{
+  if(searchInput.value === ''){
+    alert('Add channel url first!!')
+  } else{
+    search()
+  }
+})
 
 
 
