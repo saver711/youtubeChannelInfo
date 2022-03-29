@@ -62,11 +62,14 @@ function search() {
   )
 }
 
-searchBtn.addEventListener('click', ()=>{
+searchBtn.addEventListener('click', (e)=>{
+  e.preventDefault();
   if(searchInput.value === ''){
     alert('Add channel url first!!')
+    searchInput.focus()
   } else{
     search()
+    searchInput.blur()
   }
 })
 

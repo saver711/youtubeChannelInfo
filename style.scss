@@ -330,7 +330,7 @@
       justify-content: center;
       align-items: center;
 
-      input{
+      .searchInp{
           border-radius: 5px;
           overflow: hidden;
           min-width: 350px;
@@ -383,7 +383,7 @@
           font-size: 4rem;
       }
 
-      .form input{
+      .form .searchInp{
           min-width: 40%;
       }
   }
